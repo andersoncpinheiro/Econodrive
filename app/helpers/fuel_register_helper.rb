@@ -1,0 +1,2 @@
+module FuelRegisterHelper
+end
