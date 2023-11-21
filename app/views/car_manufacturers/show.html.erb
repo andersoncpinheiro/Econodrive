@@ -1,0 +1,9 @@
+<h1>Detalhes do Fabricante e Modelo</h1>
+
+<p>
+  Tipo de Combustível: <%= @car_manufacturer.manufacturer %><br>
+  Valor por Litro: <%= @car_manufacturer.car_model %>
+</p>
+
+<%= link_to 'Editar', edit_car_manufacturer_path(@car_manufacturer) %> |
+<%= link_to 'Voltar', car_manufacturers_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@car_manufacturer) do |f| %>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <%= f.label :manufacturer %>
+      <%= f.text_field :manufacturer, maxlength: 20 %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.label :car_model %>
+      <%= f.text_field :car_model, maxlength: 50 %>
+    </div>
+     <div class="form-group col-md-6">
+      <%= f.label :year %>
+      <%= f.text_field :year, maxlength: 4 %>
+    </div>
+     <div class="form-group col-md-6">
+      <%= f.label :capacity %>
+      <%= f.text_field :capacity, maxlength: 10 %>
+    </div>
+     <div class="form-group col-md-6">
+      <%= f.label :type_fuel_id %>
+      <%= f.collection_select(:type_fuel_id, @fuel_registers, :id, :type_fuel, { prompt: "Choose a Fuel Type" }) %>
+    </div>
+      <div class="form-group col-md-6">
+      <%= f.label :reported_consumption %>
+      <%= f.text_field :reported_consumption, maxlength: 10 %>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+<% end %>

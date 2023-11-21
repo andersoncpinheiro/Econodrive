@@ -1,0 +1,9 @@
+<h1>Detalhes do Tipo de Combustível</h1>
+
+<p>
+  Tipo de Combustível: <%= @fuel_register.type_fuel %><br>
+  Valor por Litro: <%= @fuel_register.value_liter %>
+</p>
+
+<%= link_to 'Editar', edit_fuel_register_path(@fuel_register) %> |
+<%= link_to 'Voltar', fuel_registers_path %>

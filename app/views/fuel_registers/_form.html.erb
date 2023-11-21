@@ -1,0 +1,13 @@
+<%= form_for(@fuel_register) do |f| %>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <%= f.label :type_fuel %>
+      <%= f.text_field :type_fuel, maxlength: 100 %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.label :value_liter %>
+      <%= f.text_field :value_liter, maxlength: 100 %>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+<% end %>
